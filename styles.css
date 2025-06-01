@@ -1,0 +1,151 @@
+
+body {
+    background-color: #313338;
+
+    font-family: 'gg sans Normal', sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+
+
+}
+
+.result{
+    line-height: 1em;      /* Remove extra space between lines */
+    margin: 0;           /* Remove margins */
+    padding: 0;          /* Remove padding */
+    font-size: 16px;     /* Set a specific font size */
+    white-space: nowrap;
+}
+.result[data-twemoji="true"] {
+    line-height: 0;      /* Remove extra space between lines */
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0;           /* Remove all margins */
+    vertical-align: middle; /* Aligns the image vertically */
+    display: inline-block; /* Prevents additional spacing */
+}
+
+.progress {
+    width: 50%;
+    height: 30px;
+
+}
+
+.input-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #40444b;
+    border-radius: 8px;
+    vertical-align: middle;
+    height: 44px;
+    overflow: clip;  
+}
+
+.message-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: #40444b;
+    color: #dcddde;
+    font-size: 16px;
+    resize: none;
+    border-radius: 8px;
+    overflow-y: auto;
+    font-family: inherit;
+    padding-left: 10px;
+    height: 24px; 
+    overflow: clip; 
+}
+
+.message-input::placeholder {
+    color: #72767d;
+}
+
+
+.uploadLabel {
+    display: inline-block; /* Ensures label wraps around the SVG */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    line-height: 0; /* Remove line height to avoid extra space */
+    vertical-align: middle; /* Aligns the label properly */
+}
+
+.uploadLabel[data-disabled="true"]{
+    cursor: not-allowed; /* Change cursor to pointer */
+    
+}
+
+.upload {
+    padding-left: 15px;
+    padding-right: 5px;
+    fill: #b5bac1; 
+}
+
+.upload:hover {
+    fill: #dbdee1
+}
+
+
+.number-inputs-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically center */
+    margin: auto; /* Center the container */
+    padding: 10px; /* Add padding around the container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.number-input-label {
+    margin-right: 10px; /* Space to the right of labels */
+    color: #ffffff;
+}
+
+.number-input-field {
+    padding: 5px; /* Smaller padding inside input fields */
+    font-size: 16px; /* Smaller font size for inputs */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-right: 10px; /* Space to the right of input fields */
+    background-color: #40444b; /* Background color for inputs */
+    color: #dcddde; /* Text color for input fields */
+    border: none;
+    width: 40px;
+    height: 20px;
+}
+
+.number-input-field:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.custom-button {
+    background-color: #248046; /* Green background */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+    background-color: #1a6334; /* Darker green on hover */
+}
+
+.custom-button:disabled {
+    background-color: #2a593f; /* Lighter green background */
+    color: #929697; /* Gray text */
+    cursor: not-allowed; /* Not allowed cursor */
+    opacity: 0.6; /* Make it semi-transparent */
+}
+
+.size-recommendation {
+    color: white; /* Change text color to white */
+}

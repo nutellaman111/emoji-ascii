@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+
+    <!--https://github.com/jdecked/twemoji-->
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet">
+</head>
+<body>
+
+    <div id="textDiv" class="result"></div>
+
+    <progress class="progress" id="progress"></progress>
+
+    <div class="input-wrapper">
+        <input type="file" id="file-input" accept="image/*" style="display: none;" />
+        <label for="file-input" class="uploadLabel" id="uploadLabel">
+            <svg class="upload" id="upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#383a40"></circle> <!-- Added a fill color -->
+                <path fill-rule="evenodd" d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z" clip-rule="evenodd" class="attachButtonPlus_f298d4"></path>
+            </svg>
+        </label>
+        <textarea class="message-input" placeholder="Message #emoji-ascii-generator">Upload an image to turn it into emoji ASCII art</textarea>
+    </div>
+
+    <div class="number-inputs-container">
+        
+        <label for="input-number1" class="number-input-label">Width:</label>
+        <input type="number" class="number-input-field" id="input-number1" name="input-number1" min="1" max="50" value="14" required>
+
+        <label for="input-number2" class="number-input-label">Height:</label>
+        <input type="number" class="number-input-field" id="input-number2" name="input-number2" min="1" max="50" value="14" required>
+    
+        <button id="submit" class="custom-button" disabled="true">Regenerate</button>
+
+    </div>
+
+    <p class="size-recommendation">(best size for discord: 14x14)</p>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
